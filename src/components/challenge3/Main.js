@@ -4,7 +4,7 @@ function Title() {
   return <h1>Why I Love React</h1>;
 }
 
-export default function List() {
+export default function Main() {
   return (
     <>
       <Title />
