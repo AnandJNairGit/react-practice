@@ -1,8 +1,9 @@
 import React from "react";
+import Challenge from "./components/challenge3";
 function App() {
   function Nav() {
     return (
-      <nav style={{"display":"flex", "justifyContent":"space-between"}}>
+      <nav style={{"display":"flex", "justifyContent":"space"}}>
         <img
           src="https://picsum.photos/id/237/200/300"
           width="40px"
@@ -48,8 +49,8 @@ function App() {
   return (
     // challenge 2
     <>
-      <Header />
-      <Footer />
+    <h1>gdfgsdgsdgs</h1>
+          {/* <Challenge /> */}
     </>
   );
 }
