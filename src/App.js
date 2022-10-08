@@ -8,6 +8,11 @@ function App() {
 "
           width="40px"
         />
+        <ul>
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
       </nav>
     );
   }
