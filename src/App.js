@@ -2,13 +2,12 @@ import React from "react";
 function App() {
   function Nav() {
     return (
-      <nav>
+      <nav style={{"display":"flex", "justifyContent":"space-between"}}>
         <img
-          src="https://picsum.photos/id/237/200/300
-"
+          src="https://picsum.photos/id/237/200/300"
           width="40px"
         />
-        <ul>
+        <ul style={{ listStyle: "none", display: "flex", gap: "10px" }}>
           <li>Pricing</li>
           <li>About</li>
           <li>Contact</li>
