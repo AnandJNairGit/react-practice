@@ -1,0 +1,31 @@
+nav{
+    background: rgb(18, 22, 41);
+    padding: 0rem 1rem;
+}
+
+.nav-container {
+    margin: auto;
+    max-width: 2000px;
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+}
+
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgb(14, 208, 238);
+    /* background-color: aqua; */
+    font-size: 2rem;
+}
+
+.logo{
+    width: 2rem;
+    /* background-color: blue; */
+}
+
