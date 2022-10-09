@@ -4,6 +4,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: inter;
 }
 
 /* Remove default margin */
@@ -57,3 +58,4 @@ textarea,
 select {
   font: inherit;
 }
+
