@@ -1,31 +1,57 @@
-nav{
-    background: rgb(18, 22, 41);
-    padding: 0rem 1rem;
+* {
+  color: aliceblue;
+}
+nav {
+  background: rgb(18, 22, 41);
+  padding: 0rem 1rem;
 }
 
 .nav-container {
-    margin: auto;
-    max-width: 2000px;
-    display: flex;
-    height: 5rem;
-    justify-content: space-between;
-    align-items: center;
-    color: aliceblue;
+  margin: auto;
+  max-width: 2000px;
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
-.logo-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    color: rgb(14, 208, 238);
-    /* background-color: aqua; */
-    font-size: 2rem;
+.nav-container h3 {
+    font-size: medium;
 }
 
-.logo{
-    width: 2rem;
-    /* background-color: blue; */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2rem;
 }
 
+.logo-container > h6 {
+  color: rgb(14, 208, 238);
+}
+
+.logo {
+  width: 2rem;
+}
+
+body {
+  background: rgb(29, 39, 55);
+}
+
+main {
+  padding: 3rem 4rem;
+  background-image: url(../../assets/half-react-logo.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  line-height: 2rem;
+}
+
+main li::marker {
+  font-size: 1.4rem;
+  color: rgb(14, 208, 238);
+}
+
+.fact-list {
+    margin-top: 2rem;
+}
