@@ -1,6 +1,7 @@
 import React from "react";
 // import Challenge from "./components/challenge3";
-import Challenge from "./components/challenge5";
+// import Challenge from "./components/challenge5";
+import ReactForms from "./components/reactForms";
 
 function App() {
   function Footer() {
@@ -10,7 +11,8 @@ function App() {
   return (
     // challenge 3
     <>
-          <Challenge />
+          {/* <Challenge /> */}
+          <ReactForms />
     </>
   );
 }
