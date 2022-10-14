@@ -1,7 +1,8 @@
 import React from "react";
 // import Challenge from "./components/challenge3";
 // import Challenge from "./components/challenge5";
-import ReactForms from "./components/reactForms";
+// import ReactForms from "./components/reactForms";
+import UseEffect from "./components/useEffect";
 
 function App() {
   function Footer() {
@@ -12,7 +13,8 @@ function App() {
     // challenge 3
     <>
           {/* <Challenge /> */}
-          <ReactForms />
+          {/* <ReactForms /> */}
+          <UseEffect />
     </>
   );
 }
