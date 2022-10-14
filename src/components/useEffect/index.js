@@ -8,7 +8,7 @@ const [newCount, setNewCount] = useState(1);
 
 useEffect(()=>{
     console.log("inside use effect");
-},[]);
+},[newCount]);
   return (
     <div>
         <h1>{count}</h1>
