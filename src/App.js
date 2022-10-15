@@ -1,4 +1,5 @@
 import React from "react";
+import { HOC } from "./components/HOC";
 // import Challenge from "./components/challenge3";
 // import Challenge from "./components/challenge5";
 // import ReactForms from "./components/reactForms";
@@ -14,7 +15,8 @@ function App() {
     <>
           {/* <Challenge /> */}
           {/* <ReactForms /> */}
-          <UseEffect />
+          {/* <UseEffect /> */}
+          <HOC />
     </>
   );
 }
