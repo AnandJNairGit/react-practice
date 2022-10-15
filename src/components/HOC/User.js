@@ -1,18 +1,29 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const User = () => {
+
+    const [data, setData] = useState({  });
+    const [isLoading, setIsLoading ] = useState(true);  
+
   useEffect(() => {
     const getData = async () => {
-      const res = await fetch("https://random-data-api.com/api/v2/users");
+      setIsLoading(true);
+      const res = await fetch("https://random-data-api.com/api/v2/users?size=20");
       const json = await res.json();
-      console.log(json);
+      const data = json.map((item)=>{return (item.first_name);});
+      setData(data);
+      console.log("the data is----------->", data);
+      setIsLoading(false);
     };
     getData();
-  });
+  },[]);
+
+  const users = !isLoading ? data.map((item,index)=>{return (<h5 key={index}>{item}</h5>);}) : "";
 
   return (
     <div>
       <input type="text" />
+      {users}
     </div>
   );
 };
