@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const User = () => {
+const Address = () => {
 
     const [data, setData] = useState({  });
     const [isLoading, setIsLoading ] = useState(true);   
@@ -8,7 +8,7 @@ const User = () => {
   useEffect(() => {
     const getData = async () => {
       setIsLoading(true);
-      const res = await fetch("https://random-data-api.com/api/v2/users?size=20");
+      const res = await fetch("https://random-data-api.com/api/v2/addresses?size=20");
       const json = await res.json();
       const data = json.map((item)=>{return (item.first_name);});
       setData(data);
@@ -22,7 +22,7 @@ const User = () => {
 
   return (
     <div style={{"margin":"100px"}}>
-        <h1>Users</h1>
+        <h1>Address</h1>
       {users}
     </div>
   );
