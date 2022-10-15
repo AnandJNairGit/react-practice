@@ -1,7 +1,9 @@
 import React from 'react'
+import User from './User'
 
 export const HOC = () => {
   return (
-    <div>HOC test</div>
+    <div><User /></div>
+
   )
 }
