@@ -10,7 +10,8 @@ const Address = () => {
       setIsLoading(true);
       const res = await fetch("https://random-data-api.com/api/v2/addresses?size=20");
       const json = await res.json();
-      const data = json.map((item)=>{return (item.first_name);});
+      console.log("the json data is ---------->", json);
+      const data = json.map((item)=>{return (item.street_address);});
       setData(data);
       console.log("the data is----------->", data);
       setIsLoading(false);
@@ -28,4 +29,4 @@ const Address = () => {
   );
 };
 
-export default User;
+export default Address;
