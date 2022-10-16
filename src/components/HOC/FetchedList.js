@@ -13,12 +13,10 @@ export const FetchedList = (props) => {
       const size = `?size=${fetchSize}`;
       const res = await fetch(`${baseUrl + fetchTerm + size}}`);
       const json = await res.json();
-      console.log("the json data is ---------->", json);
       const data = json.map((item) => {
         return item[dataExtractKey];
       });
       setData(data);
-      console.log("the data is----------->", data);
       setIsLoading(false);
     };
     getData();
