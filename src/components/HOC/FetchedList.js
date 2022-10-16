@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect, useState } from "react";
 
 export const FetchedList = (props) => {
   const { fetchTerm, fetchSize, dataExtractKey } = props;
@@ -10,7 +11,7 @@ export const FetchedList = (props) => {
       setIsLoading(true);
       const baseUrl = "https://random-data-api.com/api/v2/";
       const size = `?size=${fetchSize}`;
-      const res = await fetch("${baseUrl + fetchTerm + size}}");
+      const res = await fetch(`${baseUrl + fetchTerm + size}}`);
       const json = await res.json();
       console.log("the json data is ---------->", json);
       const data = json.map((item) => {
@@ -32,7 +33,7 @@ export const FetchedList = (props) => {
   return (
     <div style={{ margin: "100px" }}>
       <h1>Address</h1>
-      {displayLists}
+      {displayList}
     </div>
   );
 };
