@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 
 export const FetchedList = (props) => {
-  const { fetchTerm, fetchSize, dataExtractKey } = props;
+  const { title, fetchTerm, fetchSize, dataExtractKey } = props;
   const [data, setData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
 
@@ -30,7 +30,7 @@ export const FetchedList = (props) => {
 
   return (
     <div style={{ margin: "100px" }}>
-      <h1>Address</h1>
+      <h1>{title}</h1>
       {displayList}
     </div>
   );

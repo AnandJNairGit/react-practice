@@ -3,7 +3,12 @@ import { FetchedList } from "./FetchedList";
 
 const User = () => {
   return (
-    <FetchedList fetchTerm="users" fetchSize={20} dataExtractKey="first_name" />
+    <FetchedList
+      title="Users"
+      fetchTerm="users"
+      fetchSize={20}
+      dataExtractKey="first_name"
+    />
   );
 };
 
