@@ -4,7 +4,7 @@ import User from "./User";
 
 export const HOC = () => {
   return (
-    <div>
+    <div style={{"display":"flex"}}>
       <User />
       <Address />
     </div>
