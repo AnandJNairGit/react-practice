@@ -8,7 +8,7 @@ const Address = () => {
       fetchSize={20}
       dataExtractKey="street_address"
     />
-  );   
+  );
 };
 
 export default Address;
