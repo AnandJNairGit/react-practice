@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+import { ContextData } from ".";
 
 const CompC = () => {
   return (
-    <div>This is Component C</div>
-  )
-}
+    <ContextData.Consumer>
+      {(data) => {
+        return <>
+        <h1>This is Component C</h1>
+        <h3>{data}</h3>
+        </>
+      }}
+    </ContextData.Consumer>
+  );
+};
 
-export default CompC
+export default CompC;
