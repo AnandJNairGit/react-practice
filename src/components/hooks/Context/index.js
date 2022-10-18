@@ -17,4 +17,4 @@ const Contexts = () => {
 };
 
 export default Contexts;
-export { ContextData };
+export { ContextData, ContextData1 };
