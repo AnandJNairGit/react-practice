@@ -1,10 +1,15 @@
-import React from 'react'
-import CompB from './CompB'
+import React, { useContext } from "react";
+import { ContextData } from ".";
+import CompB from "./CompB";
 
 const CompA = () => {
+  const data = useContext(ContextData);
   return (
-    <CompB />
-  )
-}
+    <>
+      <h2>Inside component A, data is: {data.data }</h2>
+      <CompB />
+    </>
+  );
+};
 
-export default CompA
+export default CompA;
