@@ -1,5 +1,6 @@
 import React from 'react'
 import Contexts from './Context'
+import UseMemo from './UseMemo'
 import UseReducer from './useReducer'
 import UseRef from './UseRef'
 
@@ -8,7 +9,8 @@ const Hooks = () => {
     <div>
         {/* <UseReducer /> */}
         {/* <UseRef /> */}
-        <Contexts />
+        {/* <Contexts /> */}
+        <UseMemo />
     </div>
   )
 }
