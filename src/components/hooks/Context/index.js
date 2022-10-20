@@ -1,20 +1,18 @@
 import React, { createContext } from "react";
 import CompA from "./CompA";
+import { useState } from "react";
 
 const ContextData = createContext();
-const ContextData1 = createContext();
 
 const Contexts = () => {
+  const [data, setData] = useState("initial Data");
   return (
-    <ContextData.Provider value={"this is Context Data from provider"}>
-      <ContextData1.Provider
-        value={"this is context data from second provider"}
-      >
-        <CompA />
-      </ContextData1.Provider>
+    <ContextData.Provider value={{ data: data, setData: setData }}>
+      <h1>CONTEXT API</h1>
+      <CompA />
     </ContextData.Provider>
   );
 };
 
 export default Contexts;
-export { ContextData, ContextData1 };
+export { ContextData };
