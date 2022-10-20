@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 
 const UseMemo = () => {
   const [counter, setCounter] = useState(0);
@@ -9,7 +9,7 @@ const UseMemo = () => {
     color: darkTheme ? "white" : "black",
   };
 
-  const count = getCount(counter);
+  const count = useMemo(() => getCount(counter), [counter]);
   return (
     <>
       <div style={{ background: theme.background, color: theme.color }}>
