@@ -4,10 +4,12 @@ const UseMemo = () => {
   const [counter, setCounter] = useState(0);
   const [darkTheme, setDarkTheme] = useState(true);
 
-  const theme = {
-    background: darkTheme ? "black" : "white",
-    color: darkTheme ? "white" : "black",
-  };
+  const theme = useMemo(() => {
+    return {
+      background: darkTheme ? "black" : "white",
+      color: darkTheme ? "white" : "black",
+    };
+  }, [darkTheme]);
 
   const count = useMemo(() => getCount(counter), [counter]);
   return (
