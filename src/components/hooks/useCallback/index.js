@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import List from "./List";
 
 const UseCallback = () => {
@@ -14,9 +14,13 @@ const UseCallback = () => {
     color: !darkTheme ? "black" : "white",
   };
 
-  const getItems = () => {
-    return [number, number + 1, number + 2];
-  };
+  const getItems =useCallback(
+    () => {
+        return [number, number + 1, number + 2];
+      },
+    [number],
+  )
+  
   return (
     <div
       style={{
